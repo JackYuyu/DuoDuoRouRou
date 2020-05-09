@@ -12,8 +12,8 @@
 #import "LZConfigFile.h"
 #import "LZCartTableViewCell.h"
 #import "LZCartModel.h"
-#import "AddressViewController.h"
-#import "OrderViewController.h"
+#import "ABCDAddressViewController.h"
+#import "ABCDOrderViewController.h"
 
 @interface LZCartViewController ()<UITableViewDelegate,UITableViewDataSource>
 {
@@ -468,7 +468,7 @@ NSString *string = [NSString stringWithFormat:@" %.2f",totlePrice ];    self.tot
     UIAlertController *alertVc = [UIAlertController alertControllerWithTitle:nil message:@"No address info" preferredStyle:UIAlertControllerStyleAlert];
     
     UIAlertAction *ok = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-        AddressViewController *vc = [AddressViewController new];
+        ABCDAddressViewController *vc = [ABCDAddressViewController new];
         [self.navigationController pushViewController:vc animated:YES];
     }];
     
@@ -495,7 +495,7 @@ NSString *string = [NSString stringWithFormat:@" %.2f",totlePrice ];    self.tot
         [Userdefaults setObject:member[@"id"] forKey:@"id"];
         
         
-        OrderViewController *vc = [OrderViewController new];
+        ABCDOrderViewController *vc = [ABCDOrderViewController new];
         vc.hidesBottomBarWhenPushed = YES;
         [self.navigationController pushViewController:vc animated:YES];
         
