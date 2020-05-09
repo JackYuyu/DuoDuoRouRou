@@ -11,7 +11,7 @@
 #import "LZCartTableViewCell.h"
 #import "LZConfigFile.h"
 #import "LZCartModel.h"
-#import "GoodsModel.h"
+#import "ABCDGoodsModel.h"
 @interface LZCartTableViewCell ()
 {
     LZNumberChangedBlock numberAddBlock;
@@ -33,7 +33,7 @@
 //数量
 @property (nonatomic,retain)UILabel *numberLabel;
 //
-@property(nonatomic,strong) GoodsModel *goods;
+@property(nonatomic,strong) ABCDGoodsModel *goods;
 
 @end
 

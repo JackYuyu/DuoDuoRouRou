@@ -7,7 +7,7 @@
 //
 
 #import "OrderViewController.h"
-#import "GoodsModel.h"
+#import "ABCDGoodsModel.h"
 #import "LZCartModel.h"
 #import "OrderDetailViewController.h"
 
@@ -62,7 +62,7 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     OrderCell *cell = [tableView dequeueReusableCellWithIdentifier:@"OrderCell"];
     LZCartModel *model = self.dataArr[indexPath.row];
-    GoodsModel *goods = model.goods;
+    ABCDGoodsModel *goods = model.goods;
     NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://shop.xiazaiapps.com%@",goods.smallPic]];
     [cell.iconV sd_setImageWithURL:url];
     cell.nameLab.text = goods.name;
@@ -98,7 +98,7 @@
     OrderDetailViewController *vc = [OrderDetailViewController new];
     vc.hidesBottomBarWhenPushed = YES;
     LZCartModel *model = self.dataArr[indexPath.row];
-    GoodsModel *goods = model.goods;
+    ABCDGoodsModel *goods = model.goods;
     vc.model = goods;
     vc.count = [NSString stringWithFormat:@"%ld",model.count];
     vc.createTime = model.createTime;

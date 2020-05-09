@@ -2,7 +2,7 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#import "GoodsModel.h"
+#import "ABCDGoodsModel.h"
 @interface LZCartModel : NSObject
 //自定义模型时,这三个属性必须有
 @property (nonatomic,assign) BOOL select;
@@ -16,7 +16,7 @@
 
 @property (nonatomic,retain)UIImage *image;
 //
-@property(nonatomic,strong) GoodsModel *goods;
+@property(nonatomic,strong) ABCDGoodsModel *goods;
 @property (nonatomic, copy) NSString *createTime;
 
 @property(nonatomic,copy) NSString *ID;

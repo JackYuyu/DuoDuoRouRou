@@ -85,18 +85,12 @@ static void *WkwebBrowserContext = &WkwebBrowserContext;
     
     //添加到主控制器上
     [self.view addSubview:self.wkWebView];
-    if (@available(iOS 13.0, *)) {
-           UIView *statusBar = [[UIView alloc]initWithFrame:[UIApplication
-                                                             sharedApplication].keyWindow.windowScene.statusBarManager.statusBarFrame] ;
-           statusBar.backgroundColor = [UIColor whiteColor];
-           [[UIApplication sharedApplication].keyWindow addSubview:statusBar];
-       }else{
-           UIView *statusBar = [[[UIApplication sharedApplication] valueForKey:@"statusBarWindow"] valueForKey:@"statusBar"];
-           
-           if ([statusBar respondsToSelector:@selector(setBackgroundColor:)]) {
-               statusBar.backgroundColor = [UIColor whiteColor];
-           }
-       }
+    UIView *statusBar = [[[UIApplication sharedApplication] valueForKey:@"statusBarWindow"] valueForKey:@"statusBar"];
+    
+    if ([statusBar respondsToSelector:@selector(setBackgroundColor:)]) {
+        statusBar.backgroundColor = [UIColor whiteColor];
+    }
+    
     [self.wkWebView addSubview:self.progressView];
     
     UILongPressGestureRecognizer *longPress = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(customBackItemClicked)];
@@ -105,9 +99,9 @@ static void *WkwebBrowserContext = &WkwebBrowserContext;
     
     [self.wkWebView addGestureRecognizer:longPress];
     
-//    [self.view addSubview:self.bottomView];
+    [self.view addSubview:self.bottomView];
     
-//    [self initBottomView];
+    [self initBottomView];
     
 }
 
@@ -511,7 +505,7 @@ static void *WkwebBrowserContext = &WkwebBrowserContext;
         
         // 允许用户更改网页的设置
         Configuration.userContentController = UserContentController;
-        _wkWebView = [[WKWebView alloc] initWithFrame:CGRectMake(0, StatusBarHeight_N(), DEVICE_SCREEN_WIDTH, DEVICE_SCREEN_HEIGHT - StatusBarHeight_N()) configuration:Configuration];
+        _wkWebView = [[WKWebView alloc] initWithFrame:CGRectMake(0, StatusBarHeight_N(), DEVICE_SCREEN_WIDTH, DEVICE_SCREEN_HEIGHT - StatusBarHeight_N()- self.bottomView.bounds.size.height) configuration:Configuration];
         _wkWebView.backgroundColor = RGB(240, 240, 240);
         // 设置代理
         _wkWebView.navigationDelegate = self;

@@ -9,10 +9,10 @@
 #import "SearchChildController.h"
 #import "SearchHeadView.h"
 #import "DDSearchCell.h"
-#import "GoodsDetailViewController.h"
-#import "GoodsListViewController.h"
-#import "BtnItemModel.h"
-#import "GoodsModel.h"
+#import "ABCDGoodsDetailViewController.h"
+#import "ABCDGoodsListViewController.h"
+#import "ABCDBtnItemModel.h"
+#import "ABCDGoodsModel.h"
 @interface SearchChildController ()
 <UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout>
 @property (nonatomic, strong) UICollectionView *collectionView;
@@ -69,7 +69,7 @@
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
     
-    BtnItemModel *btnModel = self.dataArr[self.index];
+    ABCDBtnItemModel *btnModel = self.dataArr[self.index];
        
     return btnModel.goods.count;
 }
@@ -93,7 +93,7 @@
 
 - (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath {
     SearchHeadView *view = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"SearchHeadView" forIndexPath:indexPath];
-    BtnItemModel *model = self.dataArr[self.index];
+    ABCDBtnItemModel *model = self.dataArr[self.index];
     NSString *url = [NSString stringWithFormat:@"http://shop.xiazaiapps.com%@",model.icon];
     [view.iconV sd_setImageWithURL:[NSURL URLWithString:url]];
     
@@ -104,8 +104,8 @@
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     
     DDSearchCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"DDSearchCell" forIndexPath:indexPath];
-    BtnItemModel *btnModel = self.dataArr[self.index];
-    GoodsModel *model = btnModel.goods[indexPath.item];
+    ABCDBtnItemModel *btnModel = self.dataArr[self.index];
+    ABCDGoodsModel *model = btnModel.goods[indexPath.item];
     NSString *url = [NSString stringWithFormat:@"http://shop.xiazaiapps.com%@",model.smallPic];
     [cell.iconV sd_setImageWithURL:[NSURL URLWithString:url]];
     cell.nameLab.text = [NSString stringWithFormat:@"%@",model.name] ;
@@ -117,10 +117,10 @@
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
     
-    GoodsDetailViewController *vc = [GoodsDetailViewController new];
+    ABCDGoodsDetailViewController *vc = [ABCDGoodsDetailViewController new];
     vc.hidesBottomBarWhenPushed = YES;
-    BtnItemModel *model = self.dataArr[self.index];
-    GoodsModel *goodsModel = model.goods[indexPath.item];
+    ABCDBtnItemModel *model = self.dataArr[self.index];
+    ABCDGoodsModel *goodsModel = model.goods[indexPath.item];
     vc.model = goodsModel;
     [self.navigationController pushViewController:vc animated:YES];
     
@@ -138,7 +138,7 @@
             NSDictionary *data = returnData[@"data"];
             NSArray *shopCircles = data[@"types"];
             if (shopCircles.count>0) {
-                NSArray *dataArr =  [BtnItemModel mj_objectArrayWithKeyValuesArray:shopCircles];
+                NSArray *dataArr =  [ABCDBtnItemModel mj_objectArrayWithKeyValuesArray:shopCircles];
                 self.dataArr = dataArr.mutableCopy;
                 [self.collectionView reloadData];
 

@@ -5,14 +5,14 @@ source 'https://github.com/CocoaPods/Specs.git'
 target 'DuoDuoRouRou' do
   # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
    use_frameworks!
-pod 'TZImagePickerController'
+    pod 'TZImagePickerController'
     pod 'IQKeyboardManager'
     pod 'YYModel'
     pod 'MJRefresh'
     pod 'SDCycleScrollView'
     pod 'ZJScrollPageView'
     pod 'Masonry'
-    pod 'AFNetworking'
+    pod 'AFNetworking', :subspecs => ['Reachability', 'Serialization', 'Security', 'NSURLSession']
     pod 'EasyNavigation'
     pod 'MBProgressHUD'
     pod 'MJExtension'

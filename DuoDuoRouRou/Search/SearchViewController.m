@@ -8,9 +8,9 @@
 
 #import "SearchViewController.h"
 #import "SearchChildController.h"
-#import "GoodsListViewController.h"
-#import "BtnItemModel.h"
-#import "GoodsModel.h"
+#import "ABCDGoodsListViewController.h"
+#import "ABCDBtnItemModel.h"
+#import "ABCDGoodsModel.h"
 @interface SearchViewController ()
 <UISearchBarDelegate,ZJScrollPageViewDelegate>
 @property (nonatomic, strong) UISearchBar *searchBar;
@@ -117,8 +117,8 @@
             if (goods.count>0) {
                 
                 
-                NSArray *dataArr = [GoodsModel mj_objectArrayWithKeyValuesArray:goods];
-                GoodsListViewController *vc = [GoodsListViewController new];
+                NSArray *dataArr = [ABCDGoodsModel mj_objectArrayWithKeyValuesArray:goods];
+                ABCDGoodsListViewController *vc = [ABCDGoodsListViewController new];
                 vc.hidesBottomBarWhenPushed = YES;
                 vc.dataArr = dataArr;
                 [self.navigationController pushViewController:vc animated:YES];

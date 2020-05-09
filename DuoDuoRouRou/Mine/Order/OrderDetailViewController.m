@@ -12,7 +12,7 @@
 #import "OrderDetailCell.h"
 #import "OrderDetailSendInfoCell.h"
 
-#import "GoodsDetailViewController.h"
+#import "ABCDGoodsDetailViewController.h"
 @interface OrderDetailViewController ()
 <UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong) UITableView *tableView;
@@ -109,7 +109,7 @@
 - (void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
     if (indexPath.row == 0) {
-        GoodsDetailViewController *vc= [GoodsDetailViewController new];
+        ABCDGoodsDetailViewController *vc= [ABCDGoodsDetailViewController new];
         vc.hidesBottomBarWhenPushed = YES;
         vc.model =self.model;
         [self.navigationController pushViewController:vc animated:YES];
@@ -118,7 +118,7 @@
 
 
 - (void)agion:(UIButton *)btn {
-    GoodsDetailViewController *vc= [GoodsDetailViewController new];
+    ABCDGoodsDetailViewController *vc= [ABCDGoodsDetailViewController new];
     vc.hidesBottomBarWhenPushed = YES;
     vc.model =self.model;
     [self.navigationController pushViewController:vc animated:YES];
