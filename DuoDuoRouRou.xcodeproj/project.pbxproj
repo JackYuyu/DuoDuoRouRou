@@ -8,17 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		76BB7A6A1254C6A220B62E72 /* Pods_DuoDuoRouRou.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 965159966340ACF0EF6EF093 /* Pods_DuoDuoRouRou.framework */; };
-		9F17B9BB2465757500D129E6 /* OrderDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F17B9A42465757500D129E6 /* OrderDetailCell.m */; };
-		9F17B9BC2465757500D129E6 /* OrderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F17B9A52465757500D129E6 /* OrderViewController.m */; };
-		9F17B9BD2465757500D129E6 /* OrderHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F17B9A62465757500D129E6 /* OrderHeadView.m */; };
-		9F17B9BE2465757500D129E6 /* OrderDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F17B9A72465757500D129E6 /* OrderDetailViewController.m */; };
-		9F17B9BF2465757500D129E6 /* OrderDetailSendInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F17B9AD2465757500D129E6 /* OrderDetailSendInfoCell.m */; };
-		9F17B9C02465757500D129E6 /* OrderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F17B9AF2465757500D129E6 /* OrderCell.m */; };
-		9F17B9C12465757500D129E6 /* ResetPasswordController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F17B9B42465757500D129E6 /* ResetPasswordController.m */; };
-		9F17B9C22465757500D129E6 /* SettingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F17B9B62465757500D129E6 /* SettingCell.m */; };
-		9F17B9C32465757500D129E6 /* ClearCacheViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F17B9B72465757500D129E6 /* ClearCacheViewController.m */; };
-		9F17B9C42465757500D129E6 /* ResetAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F17B9B92465757500D129E6 /* ResetAccountViewController.m */; };
-		9F17B9C52465757500D129E6 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F17B9BA2465757500D129E6 /* SettingViewController.m */; };
+		9F17B9BB2465757500D129E6 /* ABCDOrderDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F17B9A42465757500D129E6 /* ABCDOrderDetailCell.m */; };
+		9F17B9BC2465757500D129E6 /* ABCDOrderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F17B9A52465757500D129E6 /* ABCDOrderViewController.m */; };
+		9F17B9BD2465757500D129E6 /* ABCDOrderHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F17B9A62465757500D129E6 /* ABCDOrderHeadView.m */; };
+		9F17B9BE2465757500D129E6 /* ABCDOrderDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F17B9A72465757500D129E6 /* ABCDOrderDetailViewController.m */; };
+		9F17B9BF2465757500D129E6 /* ABCDOrderDetailSendInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F17B9AD2465757500D129E6 /* ABCDOrderDetailSendInfoCell.m */; };
+		9F17B9C02465757500D129E6 /* ABCDOrderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F17B9AF2465757500D129E6 /* ABCDOrderCell.m */; };
+		9F17B9C12465757500D129E6 /* ABCDResetPasswordController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F17B9B42465757500D129E6 /* ABCDResetPasswordController.m */; };
+		9F17B9C22465757500D129E6 /* ABCDSettingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F17B9B62465757500D129E6 /* ABCDSettingCell.m */; };
+		9F17B9C32465757500D129E6 /* ABCDClearCacheViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F17B9B72465757500D129E6 /* ABCDClearCacheViewController.m */; };
+		9F17B9C42465757500D129E6 /* ABCDResetAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F17B9B92465757500D129E6 /* ABCDResetAccountViewController.m */; };
+		9F17B9C52465757500D129E6 /* ABCDSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F17B9BA2465757500D129E6 /* ABCDSettingViewController.m */; };
 		9F17BA71246576EA00D129E6 /* UIViewExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F17BA33246576EA00D129E6 /* UIViewExt.m */; };
 		9F17BA72246576EA00D129E6 /* LZCartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F17BA35246576EA00D129E6 /* LZCartViewController.m */; };
 		9F17BA73246576EA00D129E6 /* cart_addBtn_nomal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F17BA37246576EA00D129E6 /* cart_addBtn_nomal@2x.png */; };
@@ -68,10 +68,10 @@
 		9F518E8C2451749E00EF8F3C /* DDImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F518E8B2451749E00EF8F3C /* DDImageCell.m */; };
 		9F518E8F2451750800EF8F3C /* DDItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F518E8E2451750800EF8F3C /* DDItemCell.m */; };
 		9F518E922451754E00EF8F3C /* HeadReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F518E912451754E00EF8F3C /* HeadReusableView.m */; };
-		9F518E962451769900EF8F3C /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F518E952451769900EF8F3C /* SearchViewController.m */; };
-		9F518E992451774100EF8F3C /* SearchChildController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F518E982451774100EF8F3C /* SearchChildController.m */; };
-		9F518E9C2451787600EF8F3C /* SearchHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F518E9B2451787600EF8F3C /* SearchHeadView.m */; };
-		9F518E9F2451792700EF8F3C /* DDSearchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F518E9E2451792700EF8F3C /* DDSearchCell.m */; };
+		9F518E962451769900EF8F3C /* ABCDSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F518E952451769900EF8F3C /* ABCDSearchViewController.m */; };
+		9F518E992451774100EF8F3C /* ABCDSearchChildController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F518E982451774100EF8F3C /* ABCDSearchChildController.m */; };
+		9F518E9C2451787600EF8F3C /* ABCDSearchHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F518E9B2451787600EF8F3C /* ABCDSearchHeadView.m */; };
+		9F518E9F2451792700EF8F3C /* ABCDDDSearchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F518E9E2451792700EF8F3C /* ABCDDDSearchCell.m */; };
 		9F518EA324517AF400EF8F3C /* GoodsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F518EA224517AF400EF8F3C /* GoodsListViewController.m */; };
 		9F518EA624517B1600EF8F3C /* DDGoodsListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F518EA524517B1600EF8F3C /* DDGoodsListCell.m */; };
 		9F518EA924517B3D00EF8F3C /* GoodsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F518EA824517B3D00EF8F3C /* GoodsDetailViewController.m */; };
@@ -80,11 +80,11 @@
 		9F518EB224518F1E00EF8F3C /* AddCartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F518EB124518F1E00EF8F3C /* AddCartView.m */; };
 		9F518EB524518F3A00EF8F3C /* BtnItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F518EB424518F3A00EF8F3C /* BtnItemModel.m */; };
 		9F518EB824518F5900EF8F3C /* GoodsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F518EB724518F5900EF8F3C /* GoodsModel.m */; };
-		9F518EBC2451911200EF8F3C /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F518EBB2451911200EF8F3C /* MineViewController.m */; };
-		9F518EBF245191AB00EF8F3C /* DDMineHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F518EBE245191AB00EF8F3C /* DDMineHeadView.m */; };
-		9F518EC6245191E200EF8F3C /* MineCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F518EC3245191E200EF8F3C /* MineCell.xib */; };
-		9F518EC7245191E200EF8F3C /* MineCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F518EC5245191E200EF8F3C /* MineCell.m */; };
-		9F518ECA245191FE00EF8F3C /* AddressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F518EC9245191FE00EF8F3C /* AddressViewController.m */; };
+		9F518EBC2451911200EF8F3C /* ABCDMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F518EBB2451911200EF8F3C /* ABCDMineViewController.m */; };
+		9F518EBF245191AB00EF8F3C /* ABCDDDMineHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F518EBE245191AB00EF8F3C /* ABCDDDMineHeadView.m */; };
+		9F518EC6245191E200EF8F3C /* ABCDMineCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F518EC3245191E200EF8F3C /* ABCDMineCell.xib */; };
+		9F518EC7245191E200EF8F3C /* ABCDMineCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F518EC5245191E200EF8F3C /* ABCDMineCell.m */; };
+		9F518ECA245191FE00EF8F3C /* ABCDAddressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F518EC9245191FE00EF8F3C /* ABCDAddressViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,28 +107,28 @@
 /* Begin PBXFileReference section */
 		8A047A2AAADA73B18B4B30A6 /* Pods-DuoDuoRouRou.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DuoDuoRouRou.debug.xcconfig"; path = "Target Support Files/Pods-DuoDuoRouRou/Pods-DuoDuoRouRou.debug.xcconfig"; sourceTree = "<group>"; };
 		965159966340ACF0EF6EF093 /* Pods_DuoDuoRouRou.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DuoDuoRouRou.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9F17B9A42465757500D129E6 /* OrderDetailCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderDetailCell.m; sourceTree = "<group>"; };
-		9F17B9A52465757500D129E6 /* OrderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderViewController.m; sourceTree = "<group>"; };
-		9F17B9A62465757500D129E6 /* OrderHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderHeadView.m; sourceTree = "<group>"; };
-		9F17B9A72465757500D129E6 /* OrderDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderDetailViewController.m; sourceTree = "<group>"; };
-		9F17B9A82465757500D129E6 /* OrderDetailSendInfoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderDetailSendInfoCell.h; sourceTree = "<group>"; };
-		9F17B9A92465757500D129E6 /* OrderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderCell.h; sourceTree = "<group>"; };
-		9F17B9AA2465757500D129E6 /* OrderHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderHeadView.h; sourceTree = "<group>"; };
-		9F17B9AB2465757500D129E6 /* OrderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderViewController.h; sourceTree = "<group>"; };
-		9F17B9AC2465757500D129E6 /* OrderDetailCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderDetailCell.h; sourceTree = "<group>"; };
-		9F17B9AD2465757500D129E6 /* OrderDetailSendInfoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderDetailSendInfoCell.m; sourceTree = "<group>"; };
-		9F17B9AE2465757500D129E6 /* OrderDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderDetailViewController.h; sourceTree = "<group>"; };
-		9F17B9AF2465757500D129E6 /* OrderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderCell.m; sourceTree = "<group>"; };
-		9F17B9B12465757500D129E6 /* SettingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingCell.h; sourceTree = "<group>"; };
-		9F17B9B22465757500D129E6 /* ClearCacheViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClearCacheViewController.h; sourceTree = "<group>"; };
-		9F17B9B32465757500D129E6 /* ResetAccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResetAccountViewController.h; sourceTree = "<group>"; };
-		9F17B9B42465757500D129E6 /* ResetPasswordController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResetPasswordController.m; sourceTree = "<group>"; };
-		9F17B9B52465757500D129E6 /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
-		9F17B9B62465757500D129E6 /* SettingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingCell.m; sourceTree = "<group>"; };
-		9F17B9B72465757500D129E6 /* ClearCacheViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClearCacheViewController.m; sourceTree = "<group>"; };
-		9F17B9B82465757500D129E6 /* ResetPasswordController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResetPasswordController.h; sourceTree = "<group>"; };
-		9F17B9B92465757500D129E6 /* ResetAccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResetAccountViewController.m; sourceTree = "<group>"; };
-		9F17B9BA2465757500D129E6 /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
+		9F17B9A42465757500D129E6 /* ABCDOrderDetailCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABCDOrderDetailCell.m; sourceTree = "<group>"; };
+		9F17B9A52465757500D129E6 /* ABCDOrderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABCDOrderViewController.m; sourceTree = "<group>"; };
+		9F17B9A62465757500D129E6 /* ABCDOrderHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABCDOrderHeadView.m; sourceTree = "<group>"; };
+		9F17B9A72465757500D129E6 /* ABCDOrderDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABCDOrderDetailViewController.m; sourceTree = "<group>"; };
+		9F17B9A82465757500D129E6 /* ABCDOrderDetailSendInfoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABCDOrderDetailSendInfoCell.h; sourceTree = "<group>"; };
+		9F17B9A92465757500D129E6 /* ABCDOrderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABCDOrderCell.h; sourceTree = "<group>"; };
+		9F17B9AA2465757500D129E6 /* ABCDOrderHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABCDOrderHeadView.h; sourceTree = "<group>"; };
+		9F17B9AB2465757500D129E6 /* ABCDOrderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABCDOrderViewController.h; sourceTree = "<group>"; };
+		9F17B9AC2465757500D129E6 /* ABCDOrderDetailCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABCDOrderDetailCell.h; sourceTree = "<group>"; };
+		9F17B9AD2465757500D129E6 /* ABCDOrderDetailSendInfoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABCDOrderDetailSendInfoCell.m; sourceTree = "<group>"; };
+		9F17B9AE2465757500D129E6 /* ABCDOrderDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABCDOrderDetailViewController.h; sourceTree = "<group>"; };
+		9F17B9AF2465757500D129E6 /* ABCDOrderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABCDOrderCell.m; sourceTree = "<group>"; };
+		9F17B9B12465757500D129E6 /* ABCDSettingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABCDSettingCell.h; sourceTree = "<group>"; };
+		9F17B9B22465757500D129E6 /* ABCDClearCacheViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABCDClearCacheViewController.h; sourceTree = "<group>"; };
+		9F17B9B32465757500D129E6 /* ABCDResetAccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABCDResetAccountViewController.h; sourceTree = "<group>"; };
+		9F17B9B42465757500D129E6 /* ABCDResetPasswordController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABCDResetPasswordController.m; sourceTree = "<group>"; };
+		9F17B9B52465757500D129E6 /* ABCDSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABCDSettingViewController.h; sourceTree = "<group>"; };
+		9F17B9B62465757500D129E6 /* ABCDSettingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABCDSettingCell.m; sourceTree = "<group>"; };
+		9F17B9B72465757500D129E6 /* ABCDClearCacheViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABCDClearCacheViewController.m; sourceTree = "<group>"; };
+		9F17B9B82465757500D129E6 /* ABCDResetPasswordController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABCDResetPasswordController.h; sourceTree = "<group>"; };
+		9F17B9B92465757500D129E6 /* ABCDResetAccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABCDResetAccountViewController.m; sourceTree = "<group>"; };
+		9F17B9BA2465757500D129E6 /* ABCDSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABCDSettingViewController.m; sourceTree = "<group>"; };
 		9F17BA32246576EA00D129E6 /* LZConfigFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZConfigFile.h; sourceTree = "<group>"; };
 		9F17BA33246576EA00D129E6 /* UIViewExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewExt.m; sourceTree = "<group>"; };
 		9F17BA34246576EA00D129E6 /* UIViewExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewExt.h; sourceTree = "<group>"; };
@@ -220,14 +220,14 @@
 		9F518E8E2451750800EF8F3C /* DDItemCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDItemCell.m; sourceTree = "<group>"; };
 		9F518E902451754E00EF8F3C /* HeadReusableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HeadReusableView.h; sourceTree = "<group>"; };
 		9F518E912451754E00EF8F3C /* HeadReusableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HeadReusableView.m; sourceTree = "<group>"; };
-		9F518E942451769900EF8F3C /* SearchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
-		9F518E952451769900EF8F3C /* SearchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
-		9F518E972451774100EF8F3C /* SearchChildController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearchChildController.h; sourceTree = "<group>"; };
-		9F518E982451774100EF8F3C /* SearchChildController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SearchChildController.m; sourceTree = "<group>"; };
-		9F518E9A2451787600EF8F3C /* SearchHeadView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearchHeadView.h; sourceTree = "<group>"; };
-		9F518E9B2451787600EF8F3C /* SearchHeadView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SearchHeadView.m; sourceTree = "<group>"; };
-		9F518E9D2451792700EF8F3C /* DDSearchCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDSearchCell.h; sourceTree = "<group>"; };
-		9F518E9E2451792700EF8F3C /* DDSearchCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDSearchCell.m; sourceTree = "<group>"; };
+		9F518E942451769900EF8F3C /* ABCDSearchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ABCDSearchViewController.h; sourceTree = "<group>"; };
+		9F518E952451769900EF8F3C /* ABCDSearchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ABCDSearchViewController.m; sourceTree = "<group>"; };
+		9F518E972451774100EF8F3C /* ABCDSearchChildController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ABCDSearchChildController.h; sourceTree = "<group>"; };
+		9F518E982451774100EF8F3C /* ABCDSearchChildController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ABCDSearchChildController.m; sourceTree = "<group>"; };
+		9F518E9A2451787600EF8F3C /* ABCDSearchHeadView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ABCDSearchHeadView.h; sourceTree = "<group>"; };
+		9F518E9B2451787600EF8F3C /* ABCDSearchHeadView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ABCDSearchHeadView.m; sourceTree = "<group>"; };
+		9F518E9D2451792700EF8F3C /* ABCDDDSearchCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ABCDDDSearchCell.h; sourceTree = "<group>"; };
+		9F518E9E2451792700EF8F3C /* ABCDDDSearchCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ABCDDDSearchCell.m; sourceTree = "<group>"; };
 		9F518EA124517AF400EF8F3C /* GoodsListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GoodsListViewController.h; sourceTree = "<group>"; };
 		9F518EA224517AF400EF8F3C /* GoodsListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GoodsListViewController.m; sourceTree = "<group>"; };
 		9F518EA424517B1600EF8F3C /* DDGoodsListCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDGoodsListCell.h; sourceTree = "<group>"; };
@@ -244,15 +244,15 @@
 		9F518EB424518F3A00EF8F3C /* BtnItemModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BtnItemModel.m; sourceTree = "<group>"; };
 		9F518EB624518F5900EF8F3C /* GoodsModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GoodsModel.h; sourceTree = "<group>"; };
 		9F518EB724518F5900EF8F3C /* GoodsModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GoodsModel.m; sourceTree = "<group>"; };
-		9F518EBA2451911200EF8F3C /* MineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MineViewController.h; sourceTree = "<group>"; };
-		9F518EBB2451911200EF8F3C /* MineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MineViewController.m; sourceTree = "<group>"; };
-		9F518EBD245191AB00EF8F3C /* DDMineHeadView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDMineHeadView.h; sourceTree = "<group>"; };
-		9F518EBE245191AB00EF8F3C /* DDMineHeadView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDMineHeadView.m; sourceTree = "<group>"; };
-		9F518EC3245191E200EF8F3C /* MineCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MineCell.xib; sourceTree = "<group>"; };
-		9F518EC4245191E200EF8F3C /* MineCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineCell.h; sourceTree = "<group>"; };
-		9F518EC5245191E200EF8F3C /* MineCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineCell.m; sourceTree = "<group>"; };
-		9F518EC8245191FE00EF8F3C /* AddressViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddressViewController.h; sourceTree = "<group>"; };
-		9F518EC9245191FE00EF8F3C /* AddressViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddressViewController.m; sourceTree = "<group>"; };
+		9F518EBA2451911200EF8F3C /* ABCDMineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ABCDMineViewController.h; sourceTree = "<group>"; };
+		9F518EBB2451911200EF8F3C /* ABCDMineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ABCDMineViewController.m; sourceTree = "<group>"; };
+		9F518EBD245191AB00EF8F3C /* ABCDDDMineHeadView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ABCDDDMineHeadView.h; sourceTree = "<group>"; };
+		9F518EBE245191AB00EF8F3C /* ABCDDDMineHeadView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ABCDDDMineHeadView.m; sourceTree = "<group>"; };
+		9F518EC3245191E200EF8F3C /* ABCDMineCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ABCDMineCell.xib; sourceTree = "<group>"; };
+		9F518EC4245191E200EF8F3C /* ABCDMineCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABCDMineCell.h; sourceTree = "<group>"; };
+		9F518EC5245191E200EF8F3C /* ABCDMineCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABCDMineCell.m; sourceTree = "<group>"; };
+		9F518EC8245191FE00EF8F3C /* ABCDAddressViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ABCDAddressViewController.h; sourceTree = "<group>"; };
+		9F518EC9245191FE00EF8F3C /* ABCDAddressViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ABCDAddressViewController.m; sourceTree = "<group>"; };
 		EDC9578171827CB6AAFEF1D6 /* Pods-DuoDuoRouRou.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DuoDuoRouRou.release.xcconfig"; path = "Target Support Files/Pods-DuoDuoRouRou/Pods-DuoDuoRouRou.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -294,18 +294,18 @@
 		9F17B9A32465757500D129E6 /* Order */ = {
 			isa = PBXGroup;
 			children = (
-				9F17B9A42465757500D129E6 /* OrderDetailCell.m */,
-				9F17B9A52465757500D129E6 /* OrderViewController.m */,
-				9F17B9A62465757500D129E6 /* OrderHeadView.m */,
-				9F17B9A72465757500D129E6 /* OrderDetailViewController.m */,
-				9F17B9A82465757500D129E6 /* OrderDetailSendInfoCell.h */,
-				9F17B9A92465757500D129E6 /* OrderCell.h */,
-				9F17B9AA2465757500D129E6 /* OrderHeadView.h */,
-				9F17B9AB2465757500D129E6 /* OrderViewController.h */,
-				9F17B9AC2465757500D129E6 /* OrderDetailCell.h */,
-				9F17B9AD2465757500D129E6 /* OrderDetailSendInfoCell.m */,
-				9F17B9AE2465757500D129E6 /* OrderDetailViewController.h */,
-				9F17B9AF2465757500D129E6 /* OrderCell.m */,
+				9F17B9AC2465757500D129E6 /* ABCDOrderDetailCell.h */,
+				9F17B9A42465757500D129E6 /* ABCDOrderDetailCell.m */,
+				9F17B9A92465757500D129E6 /* ABCDOrderCell.h */,
+				9F17B9AF2465757500D129E6 /* ABCDOrderCell.m */,
+				9F17B9A82465757500D129E6 /* ABCDOrderDetailSendInfoCell.h */,
+				9F17B9AD2465757500D129E6 /* ABCDOrderDetailSendInfoCell.m */,
+				9F17B9AE2465757500D129E6 /* ABCDOrderDetailViewController.h */,
+				9F17B9A72465757500D129E6 /* ABCDOrderDetailViewController.m */,
+				9F17B9AA2465757500D129E6 /* ABCDOrderHeadView.h */,
+				9F17B9A62465757500D129E6 /* ABCDOrderHeadView.m */,
+				9F17B9AB2465757500D129E6 /* ABCDOrderViewController.h */,
+				9F17B9A52465757500D129E6 /* ABCDOrderViewController.m */,
 			);
 			path = Order;
 			sourceTree = "<group>";
@@ -313,16 +313,16 @@
 		9F17B9B02465757500D129E6 /* Setting */ = {
 			isa = PBXGroup;
 			children = (
-				9F17B9B12465757500D129E6 /* SettingCell.h */,
-				9F17B9B22465757500D129E6 /* ClearCacheViewController.h */,
-				9F17B9B32465757500D129E6 /* ResetAccountViewController.h */,
-				9F17B9B42465757500D129E6 /* ResetPasswordController.m */,
-				9F17B9B52465757500D129E6 /* SettingViewController.h */,
-				9F17B9B62465757500D129E6 /* SettingCell.m */,
-				9F17B9B72465757500D129E6 /* ClearCacheViewController.m */,
-				9F17B9B82465757500D129E6 /* ResetPasswordController.h */,
-				9F17B9B92465757500D129E6 /* ResetAccountViewController.m */,
-				9F17B9BA2465757500D129E6 /* SettingViewController.m */,
+				9F17B9B22465757500D129E6 /* ABCDClearCacheViewController.h */,
+				9F17B9B72465757500D129E6 /* ABCDClearCacheViewController.m */,
+				9F17B9B32465757500D129E6 /* ABCDResetAccountViewController.h */,
+				9F17B9B92465757500D129E6 /* ABCDResetAccountViewController.m */,
+				9F17B9B82465757500D129E6 /* ABCDResetPasswordController.h */,
+				9F17B9B42465757500D129E6 /* ABCDResetPasswordController.m */,
+				9F17B9B12465757500D129E6 /* ABCDSettingCell.h */,
+				9F17B9B62465757500D129E6 /* ABCDSettingCell.m */,
+				9F17B9B52465757500D129E6 /* ABCDSettingViewController.h */,
+				9F17B9BA2465757500D129E6 /* ABCDSettingViewController.m */,
 			);
 			path = Setting;
 			sourceTree = "<group>";
@@ -544,14 +544,14 @@
 		9F518E93245175CF00EF8F3C /* Search */ = {
 			isa = PBXGroup;
 			children = (
-				9F518E942451769900EF8F3C /* SearchViewController.h */,
-				9F518E952451769900EF8F3C /* SearchViewController.m */,
-				9F518E972451774100EF8F3C /* SearchChildController.h */,
-				9F518E982451774100EF8F3C /* SearchChildController.m */,
-				9F518E9A2451787600EF8F3C /* SearchHeadView.h */,
-				9F518E9B2451787600EF8F3C /* SearchHeadView.m */,
-				9F518E9D2451792700EF8F3C /* DDSearchCell.h */,
-				9F518E9E2451792700EF8F3C /* DDSearchCell.m */,
+				9F518E942451769900EF8F3C /* ABCDSearchViewController.h */,
+				9F518E952451769900EF8F3C /* ABCDSearchViewController.m */,
+				9F518E972451774100EF8F3C /* ABCDSearchChildController.h */,
+				9F518E982451774100EF8F3C /* ABCDSearchChildController.m */,
+				9F518E9A2451787600EF8F3C /* ABCDSearchHeadView.h */,
+				9F518E9B2451787600EF8F3C /* ABCDSearchHeadView.m */,
+				9F518E9D2451792700EF8F3C /* ABCDDDSearchCell.h */,
+				9F518E9E2451792700EF8F3C /* ABCDDDSearchCell.m */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -582,15 +582,15 @@
 		9F518EB9245190F900EF8F3C /* Mine */ = {
 			isa = PBXGroup;
 			children = (
-				9F518EBA2451911200EF8F3C /* MineViewController.h */,
-				9F518EBB2451911200EF8F3C /* MineViewController.m */,
-				9F518EBD245191AB00EF8F3C /* DDMineHeadView.h */,
-				9F518EBE245191AB00EF8F3C /* DDMineHeadView.m */,
-				9F518EC4245191E200EF8F3C /* MineCell.h */,
-				9F518EC5245191E200EF8F3C /* MineCell.m */,
-				9F518EC3245191E200EF8F3C /* MineCell.xib */,
-				9F518EC8245191FE00EF8F3C /* AddressViewController.h */,
-				9F518EC9245191FE00EF8F3C /* AddressViewController.m */,
+				9F518EBA2451911200EF8F3C /* ABCDMineViewController.h */,
+				9F518EBB2451911200EF8F3C /* ABCDMineViewController.m */,
+				9F518EBD245191AB00EF8F3C /* ABCDDDMineHeadView.h */,
+				9F518EBE245191AB00EF8F3C /* ABCDDDMineHeadView.m */,
+				9F518EC4245191E200EF8F3C /* ABCDMineCell.h */,
+				9F518EC5245191E200EF8F3C /* ABCDMineCell.m */,
+				9F518EC3245191E200EF8F3C /* ABCDMineCell.xib */,
+				9F518EC8245191FE00EF8F3C /* ABCDAddressViewController.h */,
+				9F518EC9245191FE00EF8F3C /* ABCDAddressViewController.m */,
 				9F17B9A32465757500D129E6 /* Order */,
 				9F17B9B02465757500D129E6 /* Setting */,
 			);
@@ -718,7 +718,7 @@
 				9F17BA73246576EA00D129E6 /* cart_addBtn_nomal@2x.png in Resources */,
 				9F17BA79246576EA00D129E6 /* cart_cutBtn_nomal@2x.png in Resources */,
 				9F518E4B24516B8400EF8F3C /* Assets.xcassets in Resources */,
-				9F518EC6245191E200EF8F3C /* MineCell.xib in Resources */,
+				9F518EC6245191E200EF8F3C /* ABCDMineCell.xib in Resources */,
 				9F17BA77246576EA00D129E6 /* cart_addBtn_highlight@2x.png in Resources */,
 				9F17BA75246576EA00D129E6 /* cart_unSelect_btn@2x.png in Resources */,
 				9F518E4924516B8200EF8F3C /* Main.storyboard in Resources */,
@@ -791,7 +791,7 @@
 			files = (
 				9F518E792451715F00EF8F3C /* RegistLoginViewController.m in Sources */,
 				9F518E86245173F300EF8F3C /* DDCycleCell.m in Sources */,
-				9F518E9C2451787600EF8F3C /* SearchHeadView.m in Sources */,
+				9F518E9C2451787600EF8F3C /* ABCDSearchHeadView.m in Sources */,
 				9F17BA7F246576EA00D129E6 /* UIView+Frame.m in Sources */,
 				9F17BA8B246576EA00D129E6 /* MBProgressHUD+MJ.m in Sources */,
 				9F17BA8A246576EA00D129E6 /* LZPictureBrowser.m in Sources */,
@@ -800,54 +800,54 @@
 				9F17BA7B246576EA00D129E6 /* LZCartModel.m in Sources */,
 				9F17BA8E246576EA00D129E6 /* UIViewController+RedPacket.m in Sources */,
 				9F518E8F2451750800EF8F3C /* DDItemCell.m in Sources */,
-				9F17B9C02465757500D129E6 /* OrderCell.m in Sources */,
+				9F17B9C02465757500D129E6 /* ABCDOrderCell.m in Sources */,
 				9F518EB224518F1E00EF8F3C /* AddCartView.m in Sources */,
 				9F17BA8C246576EA00D129E6 /* UIView+AZGradient.m in Sources */,
-				9F17B9BF2465757500D129E6 /* OrderDetailSendInfoCell.m in Sources */,
-				9F17B9BD2465757500D129E6 /* OrderHeadView.m in Sources */,
+				9F17B9BF2465757500D129E6 /* ABCDOrderDetailSendInfoCell.m in Sources */,
+				9F17B9BD2465757500D129E6 /* ABCDOrderHeadView.m in Sources */,
 				9F518EA624517B1600EF8F3C /* DDGoodsListCell.m in Sources */,
 				9F17BA81246576EA00D129E6 /* RewardInfo.m in Sources */,
 				9F17BA89246576EA00D129E6 /* LZBroadcastViewCell.m in Sources */,
-				9F518E992451774100EF8F3C /* SearchChildController.m in Sources */,
+				9F518E992451774100EF8F3C /* ABCDSearchChildController.m in Sources */,
 				9F518EA924517B3D00EF8F3C /* GoodsDetailViewController.m in Sources */,
 				9F518E83245173D000EF8F3C /* DDBtnItemCell.m in Sources */,
-				9F17B9C22465757500D129E6 /* SettingCell.m in Sources */,
+				9F17B9C22465757500D129E6 /* ABCDSettingCell.m in Sources */,
 				9F17BA85246576EA00D129E6 /* LZPictureBrowserCell.m in Sources */,
-				9F518EBF245191AB00EF8F3C /* DDMineHeadView.m in Sources */,
-				9F17B9BB2465757500D129E6 /* OrderDetailCell.m in Sources */,
+				9F518EBF245191AB00EF8F3C /* ABCDDDMineHeadView.m in Sources */,
+				9F17B9BB2465757500D129E6 /* ABCDOrderDetailCell.m in Sources */,
 				9F17BA8D246576EA00D129E6 /* NetHttpTool.m in Sources */,
-				9F518EC7245191E200EF8F3C /* MineCell.m in Sources */,
+				9F518EC7245191E200EF8F3C /* ABCDMineCell.m in Sources */,
 				9F17BA90246576EA00D129E6 /* UILabel+VerticalLabel.m in Sources */,
-				9F17B9C12465757500D129E6 /* ResetPasswordController.m in Sources */,
+				9F17B9C12465757500D129E6 /* ABCDResetPasswordController.m in Sources */,
 				9F518E8C2451749E00EF8F3C /* DDImageCell.m in Sources */,
 				9F518E892451745400EF8F3C /* DDSingleImageCell.m in Sources */,
 				9F17BA7C246576EA00D129E6 /* LZCartTableViewCell.m in Sources */,
 				9F518E4024516B8200EF8F3C /* AppDelegate.m in Sources */,
 				9F17BA8F246576EA00D129E6 /* SuspensionBtn.m in Sources */,
-				9F518ECA245191FE00EF8F3C /* AddressViewController.m in Sources */,
+				9F518ECA245191FE00EF8F3C /* ABCDAddressViewController.m in Sources */,
 				9F17BA71246576EA00D129E6 /* UIViewExt.m in Sources */,
-				9F17B9C52465757500D129E6 /* SettingViewController.m in Sources */,
+				9F17B9C52465757500D129E6 /* ABCDSettingViewController.m in Sources */,
 				9F17BA83246576EA00D129E6 /* UIButton+TitleAndImageEdgeInsets.m in Sources */,
 				9F17BA82246576EA00D129E6 /* CALayer+XibLayerColor.m in Sources */,
 				9F17BA72246576EA00D129E6 /* LZCartViewController.m in Sources */,
 				9F17BA7D246576EA00D129E6 /* PGIndexBannerSubiew.m in Sources */,
-				9F17B9C42465757500D129E6 /* ResetAccountViewController.m in Sources */,
-				9F518E9F2451792700EF8F3C /* DDSearchCell.m in Sources */,
+				9F17B9C42465757500D129E6 /* ABCDResetAccountViewController.m in Sources */,
+				9F518E9F2451792700EF8F3C /* ABCDDDSearchCell.m in Sources */,
 				9F17BA9324657B4300D129E6 /* ClearCacheTool.m in Sources */,
-				9F17B9BE2465757500D129E6 /* OrderDetailViewController.m in Sources */,
+				9F17B9BE2465757500D129E6 /* ABCDOrderDetailViewController.m in Sources */,
 				9F17BA84246576EA00D129E6 /* LZPicture.m in Sources */,
 				9F518E75245170E200EF8F3C /* TabBarViewController.m in Sources */,
-				9F518EBC2451911200EF8F3C /* MineViewController.m in Sources */,
+				9F518EBC2451911200EF8F3C /* ABCDMineViewController.m in Sources */,
 				9F17BA87246576EA00D129E6 /* LZBroadcastView.m in Sources */,
 				9F518EAC24518E2B00EF8F3C /* GoodsInfoScrollHeadView.m in Sources */,
 				9F518EA324517AF400EF8F3C /* GoodsListViewController.m in Sources */,
 				9F17BA88246576EA00D129E6 /* UIImage+Tint.m in Sources */,
-				9F17B9BC2465757500D129E6 /* OrderViewController.m in Sources */,
+				9F17B9BC2465757500D129E6 /* ABCDOrderViewController.m in Sources */,
 				9F518EB824518F5900EF8F3C /* GoodsModel.m in Sources */,
 				9F518E802451731A00EF8F3C /* HomeViewController.m in Sources */,
 				9F518E5124516B8400EF8F3C /* main.m in Sources */,
-				9F17B9C32465757500D129E6 /* ClearCacheViewController.m in Sources */,
-				9F518E962451769900EF8F3C /* SearchViewController.m in Sources */,
+				9F17B9C32465757500D129E6 /* ABCDClearCacheViewController.m in Sources */,
+				9F518E962451769900EF8F3C /* ABCDSearchViewController.m in Sources */,
 				9F17BA80246576EA00D129E6 /* UIColor+LX.m in Sources */,
 				9F518EAF24518E9A00EF8F3C /* GoodsInfoImageCell.m in Sources */,
 				9F518E922451754E00EF8F3C /* HeadReusableView.m in Sources */,
