@@ -1,0 +1,6 @@
+framework module Pods_DuoDuoRouRou {
+  umbrella header "Pods-DuoDuoRouRou-umbrella.h"
+
+  export *
+  module * { export * }
+}
