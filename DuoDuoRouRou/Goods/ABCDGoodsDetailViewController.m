@@ -118,11 +118,11 @@
 
 - (void)setModel:(ABCDGoodsModel *)model {
     _model = model;
-    NSString *pic1 = [NSString stringWithFormat:@"%@%@",BaseURL,model.pic1];
-    NSString *pic2 = [NSString stringWithFormat:@"%@%@",BaseURL,model.pic2];
-    NSString *pic3 = [NSString stringWithFormat:@"%@%@",BaseURL,model.pic3];
-    NSString *pic4 = [NSString stringWithFormat:@"%@%@",BaseURL,model.pic4];
-    NSString *paramPic = [NSString stringWithFormat:@"%@%@",BaseURL,model.smallPic];
+    NSString *pic1 = [NSString stringWithFormat:@"%@%@",@"",model.pic1];
+    NSString *pic2 = [NSString stringWithFormat:@"%@%@",@"",model.pic2];
+    NSString *pic3 = [NSString stringWithFormat:@"%@%@",@"",model.pic3];
+    NSString *pic4 = [NSString stringWithFormat:@"%@%@",@"",model.pic4];
+    NSString *paramPic = [NSString stringWithFormat:@"%@%@",@"",model.smallPic];
     self.imgsArr = [NSMutableArray array];
     
     [self.imgsArr addObject:pic1];
@@ -241,7 +241,7 @@
         
         [_showView.okBtn addTarget:self action:@selector(okBtn) forControlEvents:UIControlEventTouchUpInside];
         [_showView.closeBtn addTarget:self action:@selector(hiddenCartView) forControlEvents:UIControlEventTouchUpInside];
-        NSString *iconURL = [NSString stringWithFormat:@"%@%@",BaseURL,_model.smallPic];
+        NSString *iconURL = [NSString stringWithFormat:@"%@%@",@"",_model.smallPic];
         [_showView.iconV sd_setImageWithURL:[NSURL URLWithString:iconURL]];
         _showView.nameLab.text = _model.name;
         _showView.priceLab.text = [NSString stringWithFormat:@"%.f",_model.memberPrice.doubleValue];

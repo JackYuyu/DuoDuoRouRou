@@ -106,29 +106,29 @@
 - (void)setModel:(ABCDGoodsModel *)model {
     _model = model;
     
-    NSString *pic1 = [NSString stringWithFormat:@"%@%@",BaseURL,model.pic1];
-    NSString *pic2 = [NSString stringWithFormat:@"%@%@",BaseURL,model.pic2];
-    NSString *pic3 = [NSString stringWithFormat:@"%@%@",BaseURL,model.pic3];
-    NSString *pic4 = [NSString stringWithFormat:@"%@%@",BaseURL,model.pic4];
-    NSString *paramPic = [NSString stringWithFormat:@"%@%@",BaseURL,model.smallPic];
+    NSString *pic1 = [NSString stringWithFormat:@"%@%@",@"",model.pic1];
+    NSString *pic2 = [NSString stringWithFormat:@"%@%@",@"",model.pic2];
+    NSString *pic3 = [NSString stringWithFormat:@"%@%@",@"",model.pic3];
+    NSString *pic4 = [NSString stringWithFormat:@"%@%@",@"",model.pic4];
+    NSString *paramPic = [NSString stringWithFormat:@"%@%@",@"",model.smallPic];
     NSMutableArray *imgsArr = [NSMutableArray array];
-    if (paramPic.length > (BaseURL.length + 6)) {
+    if (paramPic.length > (@"".length + 6)) {
         [imgsArr addObject:paramPic];
         
     }
-    if (pic1.length > (BaseURL.length + 6)) {
+    if (pic1.length > (@"".length + 6)) {
         [imgsArr addObject:pic1];
         
     }
-    if (pic2.length > (BaseURL.length + 6)) {
+    if (pic2.length > (@"".length + 6)) {
         [imgsArr addObject:pic2];
         
     }
-    if (pic3.length > (BaseURL.length + 6)) {
+    if (pic3.length > (@"".length + 6)) {
         [imgsArr addObject:pic3];
         
     }
-    if (pic4.length > (BaseURL.length + 6)) {
+    if (pic4.length > (@"".length + 6)) {
         [imgsArr addObject:pic4];
         
     }
