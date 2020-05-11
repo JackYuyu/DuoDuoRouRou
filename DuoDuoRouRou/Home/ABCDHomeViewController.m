@@ -291,7 +291,7 @@
             
             ABCDDDBtnItemCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"ABCDDDBtnItemCell" forIndexPath:indexPath];
             ABCDBtnItemModel *model = self.itemModel[indexPath.row];
-            [cell.iconV sd_setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"http://shop.xiazaiapps.com%@",model.icon]]];
+            [cell.iconV sd_setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@",model.icon]]];
             cell.nameLab.text = model.name;
             
             return cell;
@@ -318,31 +318,31 @@
             switch (indexPath.row) {
                 case 0:
                 {
-                    [cell.iconV sd_setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"http://shop.xiazaiapps.com%@",goodModel.smallPic]]];
+                    [cell.iconV sd_setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@",goodModel.smallPic]]];
                     cell.nameLab.text = @"盖亚猪笼草";
                     cell.infoLab.text = @"驱虫净化空气";
-                    [cell.iconV1 sd_setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"http://shop.xiazaiapps.com%@",goodModel.pic1]]];
-                    [cell.iconV2 sd_setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"http://shop.xiazaiapps.com%@",goodModel.pic2]]];
+                    [cell.iconV1 sd_setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@",goodModel.pic1]]];
+                    [cell.iconV2 sd_setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@",goodModel.pic2]]];
                     
                 }
                     break;
                 case 1:
                 {
-                    [cell.iconV sd_setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"http://shop.xiazaiapps.com%@",goodModel.smallPic]]];
+                    [cell.iconV sd_setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@",goodModel.smallPic]]];
                     cell.nameLab.text = @"大型捕蝇草";
                     cell.infoLab.text = @"盆栽室内草";
-                    [cell.iconV1 sd_setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"http://shop.xiazaiapps.com%@",goodModel.pic1]]];
-                    [cell.iconV2 sd_setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"http://shop.xiazaiapps.com%@",goodModel.pic2]]];
+                    [cell.iconV1 sd_setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@",goodModel.pic1]]];
+                    [cell.iconV2 sd_setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@",goodModel.pic2]]];
                     
                 }
                     break;
                 case 2:
                 {
-                    [cell.iconV sd_setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"http://shop.xiazaiapps.com%@",goodModel.smallPic]]];
+                    [cell.iconV sd_setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@",goodModel.smallPic]]];
                     cell.nameLab.text = @"杯夹捕蝇草";
                     cell.infoLab.text = @"十分好养活!";
-                    [cell.iconV1 sd_setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"http://shop.xiazaiapps.com%@",goodModel.pic1]]];
-                    [cell.iconV2 sd_setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"http://shop.xiazaiapps.com%@",goodModel.pic2]]];
+                    [cell.iconV1 sd_setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@",goodModel.pic1]]];
+                    [cell.iconV2 sd_setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@",goodModel.pic2]]];
                     
                 }
                     break;
@@ -361,7 +361,7 @@
             ABCDBtnItemModel *model = self.itemModel[1];
             
             ABCDGoodsModel *goodModel = model.goods[indexPath.row];
-            [cell.iconV sd_setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"http://shop.xiazaiapps.com%@",goodModel.smallPic]]];
+            [cell.iconV sd_setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@",goodModel.smallPic]]];
             cell.nameLab.text = goodModel.name;
             
             cell.merPriceLab.text = [NSString stringWithFormat:@"%.2f",goodModel.memberPrice.doubleValue];
@@ -378,7 +378,7 @@
             ABCDBtnItemModel *model = self.itemModel[2];
             
             ABCDGoodsModel *goodModel = model.goods[indexPath.row];
-            [cell.iconV sd_setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"http://shop.xiazaiapps.com%@",goodModel.smallPic]]];
+            [cell.iconV sd_setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@",goodModel.smallPic]]];
             cell.nameLab.text = goodModel.name;
             
             cell.merPriceLab.text = [NSString stringWithFormat:@"%.2f",goodModel.memberPrice.doubleValue];
@@ -459,7 +459,7 @@
             if (shopCircles.count>0) {
                 NSMutableArray *imgs = [NSMutableArray array];
                 for (NSDictionary *dic in shopCircles) {
-                    NSString *cricleImgUrl = [NSString stringWithFormat:@"http://shop.xiazaiapps.com%@",dic[@"pic"]];
+                    NSString *cricleImgUrl = [NSString stringWithFormat:@"%@",dic[@"pic"]];
                     [imgs addObject:cricleImgUrl];
                 }
                 weakself.cricleArr = imgs;

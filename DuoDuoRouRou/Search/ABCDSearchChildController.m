@@ -95,7 +95,7 @@
 - (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath {
     ABCDSearchHeadView *view = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"ABCDSearchHeadView" forIndexPath:indexPath];
     ABCDBtnItemModel *model = self.dataArr[self.index];
-    NSString *url = [NSString stringWithFormat:@"http://shop.xiazaiapps.com%@",model.icon];
+    NSString *url = [NSString stringWithFormat:@"%@",model.icon];
     [view.iconV sd_setImageWithURL:[NSURL URLWithString:url]];
     
     return view;
@@ -108,7 +108,7 @@
     ABCDBtnItemModel *btnModel = self.dataArr[self.index];
     ABCDGoodsModel *model = btnModel.goods[indexPath.item];
 
-    NSString *url = [NSString stringWithFormat:@"http://shop.xiazaiapps.com%@",model.smallPic];
+    NSString *url = [NSString stringWithFormat:@"%@",model.smallPic];
     [cell.iconV sd_setImageWithURL:[NSURL URLWithString:url]];
     cell.nameLab.text = [NSString stringWithFormat:@"%@",model.name] ;
     cell.priceLab.text = [NSString stringWithFormat:@" %.f",model.memberPrice.doubleValue];

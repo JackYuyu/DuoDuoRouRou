@@ -63,7 +63,7 @@
     ABCDOrderCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ABCDOrderCell"];
     LZCartModel *model = self.dataArr[indexPath.row];
     ABCDGoodsModel *goods = model.goods;
-    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://shop.xiazaiapps.com%@",goods.smallPic]];
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@",goods.smallPic]];
     [cell.iconV sd_setImageWithURL:url];
     cell.nameLab.text = goods.name;
     cell.priceLab.text = [NSString stringWithFormat:@"¥ %.2f",goods.memberPrice.doubleValue];

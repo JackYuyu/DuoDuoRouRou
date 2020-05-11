@@ -9,7 +9,7 @@
 #define PrefixHeader_pch
 
 #define ShopKey @"7a26a8ccf113464ba9a2075a35b9bafc"
-#define BaseURL @"http://shop.xiazaiapps.com"
+#define BaseURL @""
 
 
 #define DYWhite [UIColor whiteColor]

@@ -62,7 +62,7 @@
     if (indexPath.row == 0) {
         
         ABCDOrderDetailCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ABCDOrderDetailCell"];
-        NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://shop.xiazaiapps.com%@",self.model.smallPic]];
+        NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@",self.model.smallPic]];
         [cell.iconV sd_setImageWithURL:url];
         cell.nameLab.text = self.model.name;
         cell.priceLab.text = [NSString stringWithFormat:@"%.2f", self.model.memberPrice.doubleValue ];

@@ -17,7 +17,7 @@
     [super viewDidLoad];
     NSMutableArray *vcs = [NSMutableArray array];
     NSArray *imgs= @[@"首页",@"搜索",@"购物车",@"我的"];
-    NSArray *vcName= @[@"ABCDHomeViewController",@"ABCDSearchViewController",@"LZCartViewController",@"ABCDSearchViewController"];
+    NSArray *vcName= @[@"ABCDHomeViewController",@"ABCDSearchViewController",@"LZCartViewController",@"ABCDMineViewController"];
     
     for (int i = 0; i < vcName.count; i++) {
         UIViewController *vc = [[NSClassFromString(vcName[i]) alloc]init];

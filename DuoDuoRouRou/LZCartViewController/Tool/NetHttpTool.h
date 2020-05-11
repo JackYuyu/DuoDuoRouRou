@@ -17,7 +17,7 @@
 #define AddAddress @"/api/pub/address/add"
 #define AddressList @"/api/pub/address/search"
 #define EditAddress @"/api/pub/address/update"
-#define BaseURL @"http://shop.xiazaiapps.com"
+#define BaseURL @"http://shop.v1.guolegebao.cn/zhubao"
 
 NS_ASSUME_NONNULL_BEGIN
 typedef __strong void(^Succeed)(NSDictionary *returnData);

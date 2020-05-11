@@ -88,7 +88,7 @@
     cell.priceLab.text = [NSString stringWithFormat:@"¥ %.f",model.memberPrice.doubleValue];
     
     
-    NSString *urls = [NSString stringWithFormat:@"http://shop.xiazaiapps.com%@",model.smallPic];
+    NSString *urls = [NSString stringWithFormat:@"%@",model.smallPic];
     
     [cell.iconV sd_setImageWithURL:[NSURL URLWithString:urls]];
     return cell;
