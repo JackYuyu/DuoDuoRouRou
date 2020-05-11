@@ -112,26 +112,32 @@
     NSString *pic4 = [NSString stringWithFormat:@"%@%@",@"",model.pic4];
     NSString *paramPic = [NSString stringWithFormat:@"%@%@",@"",model.smallPic];
     NSMutableArray *imgsArr = [NSMutableArray array];
-    if (paramPic.length > (@"".length + 6)) {
-        [imgsArr addObject:paramPic];
-        
+    
+    for (int i=0; i<model.imgs.count; i++) {
+        NSDictionary* t=[model.imgs objectAtIndex:i];
+        [imgsArr addObject:[t objectForKey:@"url"]];
     }
-    if (pic1.length > (@"".length + 6)) {
-        [imgsArr addObject:pic1];
-        
-    }
-    if (pic2.length > (@"".length + 6)) {
-        [imgsArr addObject:pic2];
-        
-    }
-    if (pic3.length > (@"".length + 6)) {
-        [imgsArr addObject:pic3];
-        
-    }
-    if (pic4.length > (@"".length + 6)) {
-        [imgsArr addObject:pic4];
-        
-    }
+    
+//    if (paramPic.length > (@"".length + 6)) {
+//        [imgsArr addObject:paramPic];
+//        
+//    }
+//    if (pic1.length > (@"".length + 6)) {
+//        [imgsArr addObject:pic1];
+//        
+//    }
+//    if (pic2.length > (@"".length + 6)) {
+//        [imgsArr addObject:pic2];
+//        
+//    }
+//    if (pic3.length > (@"".length + 6)) {
+//        [imgsArr addObject:pic3];
+//        
+//    }
+//    if (pic4.length > (@"".length + 6)) {
+//        [imgsArr addObject:pic4];
+//        
+//    }
     
     
     self.scrollView.imageURLStringsGroup = imgsArr;

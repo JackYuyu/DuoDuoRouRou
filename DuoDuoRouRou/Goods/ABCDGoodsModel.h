@@ -27,6 +27,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic,copy) NSString *paramPic;// 参数明细
 @property(nonatomic,copy) NSString *goodsCircles;//商品轮播图表
 @property(nonatomic,copy) NSString *salePic;//售后服务
+@property(nonatomic,copy) NSArray* imgs;//轮播图
 @end
 
 NS_ASSUME_NONNULL_END
