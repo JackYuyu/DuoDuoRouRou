@@ -76,7 +76,7 @@
     self.nameLab = [UILabel new];
 //    self.nameLab.font = DYFont(15);
     self.nameLab.textAlignment = NSTextAlignmentLeft;
-    self.nameLab.numberOfLines = 0;
+    self.nameLab.numberOfLines = 3;
     
     [self.contentView addSubview:self.nameLab];
     [self.nameLab mas_makeConstraints:^(MASConstraintMaker *make) {
