@@ -92,7 +92,7 @@
 }
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
-    return 6;
+    return 5;
 }
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
@@ -111,17 +111,17 @@
             
             return 1;
             break;
+//        case 3:
+//
+//            if (self.itemModel.count >1) {
+//
+//                return  3;
+//            }else
+//            {
+//                return 0;
+//            }
+//            break;
         case 3:
-            
-            if (self.itemModel.count >1) {
-
-                return  3;
-            }else
-            {
-                return 0;
-            }
-            break;
-        case 4:
         {
             if (self.itemModel.count >1) {
                 
@@ -134,7 +134,7 @@
             }
         }
             break;
-        case 5:
+        case 4:
         {
             if (self.itemModel.count >1) {
                 
@@ -171,11 +171,11 @@
             return CGSizeMake(SW, 180);
         }
             break;
-        case 3:
-        {
-            return CGSizeMake((SW-20), 200);
-        }
-            break;
+//        case 3:
+//        {
+//            return CGSizeMake((SW-20), 200);
+//        }
+//            break;
         default:
         {
             
@@ -219,9 +219,9 @@
         case 2:
             
             return 1;
-        case 3:
-            
-            return 1;
+//        case 3:
+//
+//            return 1;
             
         default:
             return 5;
@@ -257,15 +257,17 @@
         ABCDHeadReusableView *view = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"ABCDHeadReusableView" forIndexPath:indexPath];
         view.nameLab.text = @"新品折扣";
         return view;
-    }else if (indexPath.section == 3) {
-        ABCDHeadReusableView *view = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"ABCDHeadReusableView" forIndexPath:indexPath];
-        view.nameLab.text = @"新手入门植物";
-        return view;
-    }else if (indexPath.section == 4) {
+    }
+//    else if (indexPath.section == 3) {
+//        ABCDHeadReusableView *view = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"ABCDHeadReusableView" forIndexPath:indexPath];
+//        view.nameLab.text = @"新手入门植物";
+//        return view;
+//    }
+    else if (indexPath.section == 3) {
         ABCDHeadReusableView *view = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"ABCDHeadReusableView" forIndexPath:indexPath];
         view.nameLab.text = @"爱好者选择";
         return view;
-    }else if (indexPath.section == 5) {
+    }else if (indexPath.section == 4) {
         ABCDHeadReusableView *view = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"ABCDHeadReusableView" forIndexPath:indexPath];
         view.nameLab.text = @"资深种植选择";
         return view;
@@ -306,56 +308,56 @@
             
             
         }
+//        case 3:{
+//
+//
+//           ABCDDDImageCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"ABCDDDImageCell" forIndexPath:indexPath];
+//
+//           ABCDBtnItemModel *model = self.itemModel[0];
+//
+//           ABCDGoodsModel *goodModel = model.goods[indexPath.row];
+//
+//            switch (indexPath.row) {
+//                case 0:
+//                {
+//                    [cell.iconV sd_setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@",goodModel.smallPic]]];
+//                    cell.nameLab.text = @"盖亚猪笼草";
+//                    cell.infoLab.text = @"驱虫净化空气";
+//                    [cell.iconV1 sd_setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@",goodModel.pic1]]];
+//                    [cell.iconV2 sd_setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@",goodModel.pic2]]];
+//
+//                }
+//                    break;
+//                case 1:
+//                {
+//                    [cell.iconV sd_setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@",goodModel.smallPic]]];
+//                    cell.nameLab.text = @"大型捕蝇草";
+//                    cell.infoLab.text = @"盆栽室内草";
+//                    [cell.iconV1 sd_setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@",goodModel.pic1]]];
+//                    [cell.iconV2 sd_setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@",goodModel.pic2]]];
+//
+//                }
+//                    break;
+//                case 2:
+//                {
+//                    [cell.iconV sd_setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@",goodModel.smallPic]]];
+//                    cell.nameLab.text = @"杯夹捕蝇草";
+//                    cell.infoLab.text = @"十分好养活!";
+//                    [cell.iconV1 sd_setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@",goodModel.pic1]]];
+//                    [cell.iconV2 sd_setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@",goodModel.pic2]]];
+//
+//                }
+//                    break;
+//
+//
+//                default:
+//                    break;
+//            }
+//           return cell;
+//
+//
+//        }
         case 3:{
-            
-            
-           ABCDDDImageCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"ABCDDDImageCell" forIndexPath:indexPath];
-           
-           ABCDBtnItemModel *model = self.itemModel[0];
-           
-           ABCDGoodsModel *goodModel = model.goods[indexPath.row];
-           
-            switch (indexPath.row) {
-                case 0:
-                {
-                    [cell.iconV sd_setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@",goodModel.smallPic]]];
-                    cell.nameLab.text = @"盖亚猪笼草";
-                    cell.infoLab.text = @"驱虫净化空气";
-                    [cell.iconV1 sd_setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@",goodModel.pic1]]];
-                    [cell.iconV2 sd_setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@",goodModel.pic2]]];
-                    
-                }
-                    break;
-                case 1:
-                {
-                    [cell.iconV sd_setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@",goodModel.smallPic]]];
-                    cell.nameLab.text = @"大型捕蝇草";
-                    cell.infoLab.text = @"盆栽室内草";
-                    [cell.iconV1 sd_setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@",goodModel.pic1]]];
-                    [cell.iconV2 sd_setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@",goodModel.pic2]]];
-                    
-                }
-                    break;
-                case 2:
-                {
-                    [cell.iconV sd_setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@",goodModel.smallPic]]];
-                    cell.nameLab.text = @"杯夹捕蝇草";
-                    cell.infoLab.text = @"十分好养活!";
-                    [cell.iconV1 sd_setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@",goodModel.pic1]]];
-                    [cell.iconV2 sd_setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@",goodModel.pic2]]];
-                    
-                }
-                    break;
-                
-                    
-                default:
-                    break;
-            }
-           return cell;
-            
-            
-        }
-        case 4:{
             
             ABCDDDItemCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"ABCDDDItemCell" forIndexPath:indexPath];
             ABCDBtnItemModel *model = self.itemModel[1];
@@ -372,7 +374,7 @@
             
             
         }
-        case 5:{
+        case 4:{
             
             ABCDDDItemCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"ABCDDDItemCell" forIndexPath:indexPath];
             ABCDBtnItemModel *model = self.itemModel[2];
@@ -414,15 +416,15 @@
         vc.hidesBottomBarWhenPushed = YES;
         [self.navigationController pushViewController:vc animated:YES];
     }
+//    if (indexPath.section == 3) {
+//        ABCDBtnItemModel *model = self.itemModel[0];
+//        NSArray *dataArr = model.goods;
+//        ABCDGoodsDetailViewController *vc = [ABCDGoodsDetailViewController new];
+//        vc.model = dataArr[indexPath.row];
+//        vc.hidesBottomBarWhenPushed = YES;
+//        [self.navigationController pushViewController:vc animated:YES];
+//    }
     if (indexPath.section == 3) {
-        ABCDBtnItemModel *model = self.itemModel[0];
-        NSArray *dataArr = model.goods;
-        ABCDGoodsDetailViewController *vc = [ABCDGoodsDetailViewController new];
-        vc.model = dataArr[indexPath.row];
-        vc.hidesBottomBarWhenPushed = YES;
-        [self.navigationController pushViewController:vc animated:YES];
-    }
-    if (indexPath.section == 4) {
         ABCDBtnItemModel *model = self.itemModel[1];
         NSArray *dataArr = model.goods;
         ABCDGoodsDetailViewController *vc = [ABCDGoodsDetailViewController new];
@@ -431,7 +433,7 @@
         [self.navigationController pushViewController:vc animated:YES];
     }
     
-    if (indexPath.section ==  5) {
+    if (indexPath.section ==  4) {
         ABCDBtnItemModel *model = self.itemModel[2];
         NSArray *dataArr = model.goods;
         ABCDGoodsDetailViewController *vc = [ABCDGoodsDetailViewController new];

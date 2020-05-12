@@ -125,10 +125,16 @@
     NSString *paramPic = [NSString stringWithFormat:@"%@%@",@"",model.smallPic];
     self.imgsArr = [NSMutableArray array];
     
-    [self.imgsArr addObject:pic1];
-    [self.imgsArr addObject:pic2];
-    [self.imgsArr addObject:pic3];
-    [self.imgsArr addObject:pic4];
+    for (int i=0; i<model.pics.count; i++) {
+                NSDictionary* t=[model.pics objectAtIndex:i];
+        [self.imgsArr addObject:[t objectForKey:@"url"]];
+    }
+//    [self.imgsArr addObjectsFromArray:model.pic1];
+//    [self.imgsArr addObject:pic1];
+//    [self.imgsArr addObject:pic2];
+//    [self.imgsArr addObject:pic3];
+//    [self.imgsArr addObject:pic4];
+    
     [self.imgsArr addObject:paramPic];
     
     [[SDWebImagePrefetcher sharedImagePrefetcher] prefetchURLs:self.imgsArr progress:^(NSUInteger noOfFinishedUrls, NSUInteger noOfTotalUrls) {
