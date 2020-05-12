@@ -15,7 +15,8 @@
 @interface ABCDSearchViewController ()
 <UISearchBarDelegate,ZJScrollPageViewDelegate>
 @property (nonatomic, strong) UISearchBar *searchBar;
-@property (nonatomic, strong) NSArray *titles;
+@property (nonatomic, strong) NSMutableArray *titles;
+@property(nonatomic,strong) NSMutableArray *itemModel;
 @property (nonatomic, strong) ZJScrollPageView *scrollPageView ;
 @end
 
@@ -23,6 +24,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     self.searchBar = [[UISearchBar alloc]initWithFrame:CGRectMake(0, 0, SW, 40)];
     UIImageView *barImageView = [[[self.searchBar.subviews firstObject] subviews] firstObject];
     barImageView.layer.borderColor = DYStyleColor.CGColor;
@@ -30,7 +32,7 @@
     self.searchBar.layer.cornerRadius = 20;
     self.searchBar.layer.masksToBounds = YES;
     
-
+    _titles = [NSMutableArray new];
     self.searchBar.delegate = self;
     
     self.searchBar.placeholder =@"输入要搜索的商品名";
@@ -38,7 +40,7 @@
     tf.backgroundColor = DYWhite;
     self.searchBar.barTintColor = DYWhite;
     [self.navigationView addTitleView:self.searchBar];
-    [self zjcontentView];
+    [self getData];
 }
 
 - (void)zjcontentView {
@@ -57,16 +59,16 @@
     style.showExtraButton = NO;
     style.selectedTitleColor = DYStyleColor;
     style.titleFont = DYFont(15);
-    self.titles = @[
-                    @"畅销植物",
-                    @"热门推荐",
-                    @"热带食虫",
-                    @"掌柜推荐",
-                    @"小狸藻",
-                    @"捕虫堇",
-                    @"茅膏菜",
-                    @"高手进阶"
-                    ];
+//    self.titles = @[
+//                    @"畅销植物",
+//                    @"热门推荐",
+//                    @"热带食虫",
+//                    @"掌柜推荐",
+//                    @"小狸藻",
+//                    @"捕虫堇",
+//                    @"茅膏菜",
+//                    @"高手进阶"
+//                    ];
     CGFloat y = CGRectGetMaxY(self.navigationView.frame);
     // 初始化
     CGRect scrollPageViewFrame = CGRectMake(0, y, self.view.bounds.size.width, SH - y);
@@ -97,6 +99,7 @@
     }
     return childVc;
 }
+
 
 - (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar{
     if (searchBar.text.length <= 0) {
@@ -133,5 +136,34 @@
     }];
 }
 
-
+- (void)getData
+{
+    NSMutableDictionary *dic = [NSMutableDictionary dictionary];
+    //    [dic setObject:@"true" forKey:@"noPage"];
+    [dic setObject:@(0) forKey:@"page"];
+    [dic setObject:@(10) forKey:@"pageSize"];
+    [dic setObject:ShopKey forKey:@"shopKey"];
+    weakSelf(self)
+    NSMutableDictionary *catrDic = [NSMutableDictionary dictionary];
+    //    [catrDic setValue:@"66" forKey:@"id"];
+    [catrDic setValue:ShopKey forKey:@"shopKey"];
+    [NetHttpTool Post:CategoaryList paramets:catrDic Succeed:^(id  _Nonnull returnData) {
+        
+        if (returnData[@"status"] ) {
+            NSDictionary *data = returnData[@"data"];
+            NSArray *shopCircles = data[@"types"];
+            if (shopCircles.count>0) {
+                weakself.itemModel =  [ABCDBtnItemModel mj_objectArrayWithKeyValuesArray:shopCircles];
+                for (int i=0; i<=shopCircles.count-1; i++) {
+                    ABCDBtnItemModel *model = [ABCDBtnItemModel mj_objectWithKeyValues:[shopCircles objectAtIndex:i]];
+                    [self.titles addObject:model.name];                    
+                }
+                [self zjcontentView];
+            }
+        }
+        
+    } Failure:^(NSError * _Nonnull error) {
+        [MBProgressHUD showError:@"网络错误，请检查网路"];
+    }];
+}
 @end
